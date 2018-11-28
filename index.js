@@ -2,6 +2,7 @@
 
 const fs = require("fs-extra");
 
+const headerFile = "./dist/_headers";
 const distFolderMaps = [
   {
     source: "./bower_components/px-typography-design/type",
@@ -13,9 +14,16 @@ const distFolderMaps = [
   }
 ];
 
+// Prepare assets
 for (const folderMap of distFolderMaps) {
   // Create folder if missing.
   fs.ensureDirSync(folderMap.dest);
   // Copy assets to destination folder.
   fs.copySync(folderMap.source, folderMap.dest);
 }
+
+fs.outputFileSync(
+  headerFile,
+  `/*
+  Access-Control-Allow-Origin: *`
+);
