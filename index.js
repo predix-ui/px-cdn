@@ -6,11 +6,11 @@ const headerFile = "./dist/_headers";
 const distFolderMaps = [
   {
     source: "./bower_components/px-typography-design/type",
-    dest: "./dist/type/2.0.0"
+    dest: "./dist/px-cdn/type/2.0.0"
   },
   {
     source: "./bower_components/px-typography-design-v1/type",
-    dest: "./dist/type/1.0.0"
+    dest: "./dist/px-cdn/type/1.0.0"
   }
 ];
 
