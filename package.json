@@ -1,0 +1,26 @@
+{
+  "name": "px-cdn",
+  "version": "1.0.0",
+  "description": "https://github.com/predixdesignsystem/px-typography-design/tree/v1.3.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "bower install && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/predix-ui/px-cdn.git"
+  },
+  "author": "GE Digital",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/predix-ui/px-cdn/issues"
+  },
+  "homepage": "https://github.com/predix-ui/px-cdn#readme",
+  "devDependencies": {
+    "prettier": "^1.15.2"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "node-fs-extra": "^0.8.2"
+  }
+}
